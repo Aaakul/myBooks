@@ -1,5 +1,6 @@
 import  express from "express";
 import  mysql from "mysql";
+import cors from "cors";
 
 const app = express();
 const db  = mysql.createConnection({    // In Node.js's default password authentication scheme is 'mysql_native_password'.                                 
@@ -10,6 +11,7 @@ const db  = mysql.createConnection({    // In Node.js's default password authent
 })
 
 app.use(express.json());    // Allow post json.
+app.use(cors());            // Allow API access.
 
 app.get("/", (req, res) => {
     res.json("Welcome to the backend!");
