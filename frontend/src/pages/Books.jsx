@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Books = () => {
-    const [books, setBooks] = useState([])  
+    const [books, setBooks] = useState([]);  
         useEffect(()=>{                     // Cors needed
             const fetchAllBooks = async () => {
                 try {
@@ -25,7 +25,7 @@ const Books = () => {
                         {book.cover && <img scr ={book.cover} alt=""/>}
                         <h2>{book.title}</h2>
                         <p>{book.desc}</p>
-                        <span>{book.price}</span>
+                        <span>${book.price}</span>
                     </div>
                     ))}
                 </div>
