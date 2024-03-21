@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import "./style.css";
 
 import Books from "./pages/Books";
 import Add from "./pages/Add";
