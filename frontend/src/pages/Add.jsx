@@ -38,7 +38,7 @@ const Add = () => {
                 <input type="text" placeholder="description" onChange={handleChange} name="desc"/>
                 <input type="number" placeholder="price" onChange={handleChange} name="price"/>
                 <input type="text" placeholder="cover" onChange={handleChange} name="cover"/>
-                <button onClick={handleClick}>Add</button>
+                <button onClick={handleClick} className="formButton">Add</button>
                 {error && "Something went wrong!"}
                 <Link to="/">See all books</Link>
             </div>
